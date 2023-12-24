@@ -11,6 +11,7 @@ pipeline {
                     steps {
                         dir('backend'){
                             sh 'mvn clean install spotbugs:spotbugs checkstyle:checkstyle deploy'
+                            sh 'mvn clean install -U'
                         }
                     }
                     post {
