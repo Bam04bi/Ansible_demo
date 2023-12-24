@@ -54,7 +54,9 @@
                             <goal>install-node-and-yarn</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v9.9.0</nodeVersion>
+                            <!-- Specify the required Node.js version -->
+                            <nodeVersion>v20.9.0</nodeVersion>
+                            <!-- Specify the required Yarn version -->
                             <yarnVersion>v1.5.1</yarnVersion>
                         </configuration>
                     </execution>
